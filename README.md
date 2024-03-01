@@ -23,4 +23,5 @@ SimpleHand capitalizes on the strengths of existing methodologies, thereby outpe
 
 # Related JIIOV Product 
 ![framework](images/with_jiiov_logo.gif)
+
 JIIOV is working on Extended Reality (XR) hand interaction algorithm and modules. We transplanted simpleHand design into realworld device to make a practically test. It shows advantages especially in finger interaction senario, while retains realtime efficiency. See **[here](https://youtu.be/uiMbRXwvF0Q)** for full example videos.
