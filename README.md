@@ -4,7 +4,7 @@
 
 **20240228**: 📄 Paper accepted by CVPR 2024. 🎉
 
-**20230930**: 🥇 We won the 1st place in Egocentric 3D Hand Pose Estimation challenge.🏆[[Technical Report]]((https://arxiv.org/abs/2310.04769))
+**20230930**: 🥇 We won the 1st place in Egocentric 3D Hand Pose Estimation challenge.🏆 [[Technical Report]](https://arxiv.org/abs/2310.04769)
 
 # simpleHand
 
