@@ -1,5 +1,7 @@
 # News
 
+**20240507**: 📢✨ code released. 
+
 **20240306**: 🔥🔥 Our [project page](https://simplehand.github.io/) is available. 🚀🚀
 
 **20240228**: 🎉📄 Paper accepted by CVPR 2024.📄🎉
@@ -68,7 +70,7 @@ dict(
     image_path: string # *.jpg
 )
 ```
-[*RECOMMENDED*] you can alternatively download the pre-generated images and annatations from google drive. This file can be used directly for training and evaluation, without any additional processing.
+[***RECOMMENDED***] you can alternatively download the pre-generated images and annatations from google drive. This file can be used directly for training and evaluation, without any additional processing.
 ```
 wget https://drive.google.com/drive/folders/1BfHjNjxQj3MdsGoq5irCrOskyCA9a64l?usp=drive_link
 ```
