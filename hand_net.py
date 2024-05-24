@@ -173,7 +173,6 @@ class HandNet(nn.Module):
 if __name__ == "__main__":
     import pickle
     import numpy as np
-    import refile
     from cfg import _CONFIG
 
 
@@ -198,7 +197,7 @@ if __name__ == "__main__":
 
 
     path = 'batch_data.pkl'
-    with refile.smart_open(path, 'rb') as f:
+    with open(path, 'rb') as f:
         batch_data = pickle.load(f)
         for k in batch_data:
             batch_data[k] = Tensor(batch_data[k]).float()

@@ -1,7 +1,6 @@
 from functools import lru_cache
 import os
 import numpy as np
-import refile
 import pickle
 
 import torch
@@ -24,7 +23,7 @@ def load_mano_params_c(use_left=True):
     else:
         mano_path = os.path.join(MANO_PARAMS_PATH, "MANO_RIGHT_C.pkl")
     
-    with refile.smart_open(mano_path, 'rb') as mano_file:
+    with open(mano_path, 'rb') as mano_file:
         model_data = pickle.load(mano_file)
     return model_data
 
@@ -34,7 +33,7 @@ MANO_DATA_RIGHT = load_mano_params_c(False)
 
 def load_vertices_neigh(hand_type="right"):
     file_path = "s3://zouminqiang/hand6dof/hand_keypoint/models/MANO/weight/vertices_neigh_joints_{}.pkl".format(hand_type) # 其实左右手的idx是一致的
-    with refile.smart_open(file_path, "rb") as f:
+    with open(file_path, "rb") as f:
         d = pickle.load(f)
     return d    
 

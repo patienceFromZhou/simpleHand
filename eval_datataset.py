@@ -1,8 +1,6 @@
-import refile
 import numpy as np
 import json
 from functools import lru_cache
-import nori2
 import cv2
 import pickle
 from tqdm import tqdm
@@ -15,11 +13,6 @@ from balls.imgproc import imdecode
 
 
 from kp_preprocess import get_2d3d_perspective_transform, get_points_bbox, get_points_center_scale
-
-@lru_cache(1)
-def get_fetcher():
-    nf = nori2.Fetcher()
-    return nf
 
 
 class HandMeshEvalDataset(Dataset):

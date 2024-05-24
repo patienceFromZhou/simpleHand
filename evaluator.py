@@ -6,7 +6,6 @@ from eval_datataset import HandMeshEvalDataset
 from torch.utils.data import DataLoader, SequentialSampler
 
 from tqdm import tqdm 
-import refile
 import os
 
 from cfg import _CONFIG
@@ -143,7 +142,7 @@ def infer(epoch):
     print(model_path)
     model = HandNet(_CONFIG, pretrained=False)
 
-    checkpoint = torch.load(refile.smart_open(model_path, "rb"))
+    checkpoint = torch.load(open(model_path, "rb"))
     model.load_state_dict(checkpoint["state_dict"], strict=True)
     model.eval()
 
