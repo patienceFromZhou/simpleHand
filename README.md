@@ -46,7 +46,7 @@ conda activate simpleHand
 
 Then install the rest of the dependencies by
 ```bash
-pip3 install -r requirement.txt
+pip3 install -r requirements.txt
 ```
 
 
@@ -74,7 +74,7 @@ dict(
 ```
 [***RECOMMENDED***] you can alternatively download the pre-generated images and annatations from google drive. This file can be used directly for training and evaluation, without any additional processing. 
 ```
-wget https://drive.google.com/drive/folders/1BfHjNjxQj3MdsGoq5irCrOskyCA9a64l?usp=drive_link
+https://drive.google.com/drive/folders/1BfHjNjxQj3MdsGoq5irCrOskyCA9a64l?usp=drive_link
 ```
 The folder consists of three train files, train.json, eval.json, FreiHAND.zip. Json files specify image paths. ZIP file consists images and annotations. Validate FreiHAND.zip by
 ```
