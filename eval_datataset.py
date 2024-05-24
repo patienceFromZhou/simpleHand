@@ -9,7 +9,6 @@ from typing import List, Dict
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 from torch.utils.data import SequentialSampler
-from balls.imgproc import imdecode
 
 
 from kp_preprocess import get_2d3d_perspective_transform, get_points_bbox, get_points_center_scale
