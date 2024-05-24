@@ -1,5 +1,7 @@
 # News
 
+**20240521**: 📢✨ Update checkpoints and train logs in download link. Fix some bugs. 
+
 **20240507**: 📢✨ code released. 
 
 **20240306**: 🔥🔥 Our [project page](https://simplehand.github.io/) is available. 🚀🚀
@@ -70,16 +72,16 @@ dict(
     image_path: string # *.jpg
 )
 ```
-[***RECOMMENDED***] you can alternatively download the pre-generated images and annatations from google drive. This file can be used directly for training and evaluation, without any additional processing.
+[***RECOMMENDED***] you can alternatively download the pre-generated images and annatations from google drive. This file can be used directly for training and evaluation, without any additional processing. 
 ```
 wget https://drive.google.com/drive/folders/1BfHjNjxQj3MdsGoq5irCrOskyCA9a64l?usp=drive_link
 ```
-The folder consists of three files, train.json, eval.json and FreiHAND.zip. Json files specify image paths. ZIP file consists images and annotations. Validate FreiHAND.zip by
+The folder consists of three train files, train.json, eval.json, FreiHAND.zip. Json files specify image paths. ZIP file consists images and annotations. Validate FreiHAND.zip by
 ```
 md5sum FreiHAND.zip
 1d58ff7d6029c8ff724471e06803afa4  FreiHAND.zip
 ```
-
+We release two checkpoints epoch_200_rerun1, epoch_200_rerun2. One can use them for quick comparison or model variance assessment. Also, We provided the out.log, which contains the output from the training process.
 
 Specify the folders in cfg.py. Then you can start training using the following command:
 ```
@@ -95,7 +97,7 @@ make eval
 here is an example output
 ```
 Evaluation 3D KP results:
-auc=0.000, mean_kp3d_avg=70.69 cm
+auc=0.000, mean_kp3d_avg=70.70 cm
 Evaluation 3D KP ALIGNED results:
 auc=0.887, mean_kp3d_avg=0.57 cm
 
@@ -105,6 +107,6 @@ Evaluation 3D MESH ALIGNED results:
 auc=0.881, mean_kp3d_avg=0.60 cm
 
 F-scores
-F@5.0mm = 0.0000 	F_aligned@5.0mm = 0.9187
-F@15.0mm = 0.0000 	F_aligned@15.0mm = 0.8923
+F@5.0mm = 0.0000        F_aligned@5.0mm = 0.7717
+F@15.0mm = 0.0000       F_aligned@15.0mm = 0.9858
 ```
