@@ -16,7 +16,7 @@ Array = NewType('Array', np.ndarray)
 
 
 USE_LEFT = True
-MANO_PARAMS_PATH = "s3://zouminqiang/hand6dof/hand_keypoint/models/MANO/weight/"
+MANO_PARAMS_PATH = "models/"
 
 
 def load_mano_params_c(use_left=True):

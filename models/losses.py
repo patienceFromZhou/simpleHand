@@ -15,7 +15,7 @@ NUM_HAND_JOINTS = 15
 NUM_JOINTS = NUM_BODY_JOINTS + NUM_HAND_JOINTS
 NUM_SHAPES = 10
 USE_LEFT = False
-MANO_PARAMS_PATH = "s3://zouminqiang/hand6dof/hand_keypoint/models/MANO/weight/"
+MANO_PARAMS_PATH = "models/"
 
 def load_mano_params_c(use_left=True):
     if use_left:
@@ -30,35 +30,6 @@ def load_mano_params_c(use_left=True):
 MANO_DATA_LEFT = load_mano_params_c(True)
 MANO_DATA_RIGHT = load_mano_params_c(False)
 
-
-def load_vertices_neigh(hand_type="right"):
-    file_path = "s3://zouminqiang/hand6dof/hand_keypoint/models/MANO/weight/vertices_neigh_joints_{}.pkl".format(hand_type) # 其实左右手的idx是一致的
-    with open(file_path, "rb") as f:
-        d = pickle.load(f)
-    return d    
-
-
-@lru_cache(1)
-def get_vertices_weight():
-    vertices_idx = load_vertices_neigh()
-    group_joints = [
-        ([0, 1, 5, 9, 13, 17], 1.0),
-        ([2, 6, 10, 14, 18], 2.0),
-        ([3, 7, 11, 15, 19], 2.0),
-        ([4, 8, 12, 16, 20], 2.0),
-    ]
-
-    joints_weight_map = {}
-    for group_joint, weight in group_joints:
-        for j in group_joint:
-            joints_weight_map[j] = weight
-
-    vertices_weight = []
-    for idx  in vertices_idx:
-        vertices_weight.append(joints_weight_map[idx])
-
-    vertices_weight = torch.tensor(np.array(vertices_weight, dtype=np.float32))
-    return vertices_weight
 
 @lru_cache(1)
 def get_faces():
