@@ -1,5 +1,7 @@
 # News
 
+**20240916**: 🥇🥇 We won the 1st place in Multiview Egocentric Hand Tracking challenge in conjunction with ECCV 2024.🏆🏆 [[Technical Report]](https://arxiv.org/abs/2409.19362)
+
 **20240521**: 📢✨ Update checkpoints and train logs in download link. Fix some bugs. 
 
 **20240507**: 📢✨ code released. 
@@ -8,7 +10,7 @@
 
 **20240228**: 🎉📄 Paper accepted by CVPR 2024.📄🎉
 
-**20230930**: 🥇🥇 We won the 1st place in Egocentric 3D Hand Pose Estimation challenge.🏆🏆 [[Technical Report]](https://arxiv.org/abs/2310.04769)
+**20230930**: 🥇🥇 We won the 1st place in Egocentric 3D Hand Pose Estimation challenge in conjunction with ICCV 2023.🏆🏆 [[Technical Report]](https://arxiv.org/abs/2310.04769)
 
 # simpleHand
 
