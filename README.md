@@ -18,7 +18,7 @@
 
 **A Simple Baseline for Efficient Hand Mesh Reconstruction**
 
-Zhishan Zhou, Shihao Zhou, Zhi Lv, Minqiang Zou, Tong Wu, Mochen Yu, Yao Tang, Jiajun Liang
+Zhishan Zhou, Shihao Zhou, Zhi Lv, Minqiang Zou, Tong Wu, Mochen Yu, Yao Tang, [Jiajun Liang](https://jiajunvision.github.io)
 
 [[`Paper`]](https://arxiv.org/pdf/2403.01813.pdf) [`[Project]`](#getting-started)
 
